@@ -39,7 +39,7 @@ const Methods =  {
 
         if (occEnv.validate(selectedEnv)) {
             const { url, appKey } = occEnv.get(selectedEnv);
-            finalShellScript = `grab ${CONSTANTS.PATHS.DCU} -b ${CONSTANTS.PATHS.SRC} -n ${url} -k ${appKey} -x "${path}" -o`;
+            finalShellScript = `npx ${CONSTANTS.PATHS.DCU} -b ${CONSTANTS.PATHS.SRC} -n ${url} -k ${appKey} -x "${path}" -o`;
             shell.exec(finalShellScript, {
                 async: false,
             });
