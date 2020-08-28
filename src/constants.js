@@ -1,8 +1,8 @@
 exports.CONSTANTS = {
-    ENVS: ['TEST', 'STAGE', 'PROD', 'NOENV'],
+    ENVS: ['DEV', 'TST', 'PRD', 'TEST', 'STAGE', 'PROD', 'NOENV'],
     PATHS: {
-        SRC: './src',
-        DCU: './DesignCodeUtility/dcuIndex.js',
-        CCW: './DesignCodeUtility/ccwIndex.js'
+        SRC: './widgets',
+        DCU: 'dcu',
+        CCW: 'ccw'
     },
 }
